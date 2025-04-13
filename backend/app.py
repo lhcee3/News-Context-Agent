@@ -13,6 +13,8 @@ from tools import get_latest_news
 from flask_cors import CORS
 import traceback
 
+
+
 app = Flask(__name__)
 CORS(app, supports_credentials=True, resources={r"/*": {"origins": "*"}})
 
@@ -79,10 +81,9 @@ agent = initialize_agent(
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
-@app.route('/')
+@app.route("/", methods=["GET"])
 def home():
-    app.logger.info("Backend is ready")
-    return "Backend is ready"
+    return "Backend is running ✅"
 
 @app.route('/chat', methods=['POST'])
 def chat():
