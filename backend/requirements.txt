@@ -1,0 +1,13 @@
+flask
+flask-cors
+gunicorn
+python-dotenv
+requests
+supabase
+sentence-transformers
+langchain
+langchain-community
+langchain-huggingface
+langchain-google-genai
+huggingface-hub
+google-generativeai
