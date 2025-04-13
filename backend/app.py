@@ -116,5 +116,5 @@ def handle_exception(e):
     traceback.print_exc()
     return jsonify({"error": "Internal Server Error"}), 500
 
-if __name__ == "__main__":
+if __name__ == "__app__":
     app.run(debug=True, host="0.0.0.0", port=5000)
