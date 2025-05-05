@@ -25,7 +25,8 @@ This repository hosts the code for a News Context Agent. This agent is designed 
     npm i 
     ```
 
-3.  **Usage (Conceptual - Specific usage will depend on the code):**
+3.  **Usage :**
+   
     Backend
     ``` python
     python app.py
